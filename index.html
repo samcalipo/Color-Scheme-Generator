@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- link to css file -->
+        <link rel="stylesheet" href="index.css">
+    
+        <!-- responsive viewport -->
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        
+        <!-- tilt neon font (google fonts) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    
+        <!-- bottom arrow (in color scheme) link -->
+        <link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+    </head>
+    <body>
+        <main>
+            <form>
+                <!-- user selected color -->
+                <input type="color" 
+                    id="chosenColor" 
+                    name="chosenColor">
+                
+                <!-- colour scheme mode -->
+                <select id="colorScheme" name="colorScheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-commplement">Analogic-commplement</option>
+                    <option value="triad">Triad</option>
+                </select>
+    
+                <button id="submitBtn" type="submit">Get color scheme</button>
+            </form>
+            
+            <div class="color-container">
+                <div class="individual-color" >
+                    <div class="first-color-displayed"></div>
+                    <p class="first-color-hex-value">#ABC123</p>
+                </div>
+                <div class="individual-color" >
+                    <div class="second-color-displayed" ></div>
+                    <p class="second-color-hex-value" >#ABC123</p>
+                </div>
+                <div class="individual-color" >
+                    <div class="third-color-displayed" ></div>
+                    <p class="third-color-hex-value" >#ABC123</p>
+                </div>
+                <div class="individual-color" >
+                    <div class="fourth-color-displayed" ></div>
+                    <p class="fourth-color-hex-value" >#ABC123</p>
+                </div>
+                <div class="individual-color">
+                    <div class="fifth-color-displayed" ></div>
+                    <p class="fifth-color-hex-value" >#ABC123</p>
+                </div>
+            </div>
+        </main>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>

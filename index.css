@@ -1,0 +1,138 @@
+*{
+    font-family: 'Tilt Neon', sans-serif;
+
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+/* main section  */
+main{
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid lightgrey;
+
+
+}
+
+/* ================= footer section ============ */
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0.5em;
+    gap: 0.25em;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#chosenColor{
+    width: 51px;
+    /* height: 34px; */
+    border: none;
+
+}
+#chosenColor:hover{
+    transform:scale(1.05);
+    transition: all 0.5s ease-out;
+}
+
+#colorScheme { /*color theme picker */
+    padding: 0.5em;
+    width: 60%;
+    border-color: #D1D5DB;
+    border-radius: 6px;
+
+    appearance: none;
+    background-image: url("images/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+    transition: all 0.5s ease-out;
+}
+#colorScheme:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+form > button{
+    padding: 0.35em 0.5em;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #D1D5D8;
+    border-style: solid;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-out;
+}
+form > button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+form > button:active{
+    border-style: solid;
+}
+
+/* ============= COLOR PALLETE SECTION =============== */
+
+.color-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-top: 63px;
+    
+}
+
+.individual-color{
+   width: 110px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:flex-end;
+   transition: all 0.5s ease-out;
+   background-color: white;
+
+   font-size: 0.75rem;
+   
+}
+.individual-color:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    transform:scale(1.05);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+.first-color-displayed{
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+}
+.second-color-displayed{
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+}
+.third-color-displayed{
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+}
+.fourth-color-displayed{
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+}
+.fifth-color-displayed{
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+}

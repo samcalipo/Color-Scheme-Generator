@@ -1,6 +1,7 @@
 # Color Palette Generator Web App
 
 [Click here to view the site](https://samads-color-pallete.netlify.app)
+
 This is a simple web application that allows users to generate color palettes based on a selected color and color scheme mode. It retrieves color data from the [Color API](https://www.thecolorapi.com/) and displays the generated color palette on the screen.
 
 ## Usage
